@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BowlingApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e7eebc8dabcc864fe7e23ca5dbe7594f8f2bc69")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a8f5a54d21549ff24b4aca2464eba08019bd0d2")]
 [assembly: System.Reflection.AssemblyProductAttribute("BowlingApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BowlingApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
