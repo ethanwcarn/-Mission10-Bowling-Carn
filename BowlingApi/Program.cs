@@ -6,6 +6,18 @@ using Microsoft.Data.Sqlite;
 // Create the application builder, which wires up services and middleware.
 var builder = WebApplication.CreateBuilder(args);
 
+// Allow the local Vite development server to call this API during development.
+const string FrontendDevCorsPolicy = "FrontendDev";
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(FrontendDevCorsPolicy, policy =>
+    {
+        policy.WithOrigins("http://localhost:5173")
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
 // Build a SQLite connection string that points at the BowlingLeague.sqlite file
 // located in the root of the solution (one level above the API project).
 var databasePath = Path.Combine(builder.Environment.ContentRootPath, "..", "BowlingLeague.sqlite");
@@ -23,8 +35,14 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-// Redirect HTTP traffic to HTTPS where possible.
-app.UseHttpsRedirection();
+// Redirect HTTP traffic to HTTPS outside development to avoid local certificate issues.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseHttpsRedirection();
+}
+
+// Enable CORS for the front-end app so browser fetch requests are allowed.
+app.UseCors(FrontendDevCorsPolicy);
 
 // Minimal API endpoint that returns bowler data for only the Marlins and Sharks teams.
 app.MapGet("/api/bowlers", async () =>
