@@ -1,0 +1,34 @@
+Program Compiles & Runs
+Performance levels:	Score:
+Yes	5
+The program compiles and runs without error.
+No	0
+The program crashes or has errors.
+Database Connected
+Performance levels:	Score:
+Yes	10
+The app connects to the Bowling League Database.
+No	0
+App does not connect to the database.
+App Lists Bowler Info Using React / .NET
+Performance levels:	Score:
+Yes	25
+The app lists out all the bowler info as listed in the instructions (Bowler Name, Team Name, Address, City, State, Zip, Phone Number) using .NET as the back end and React as the front end.
+Partial Credit	12.5
+List is missing Team Name or there are other problems.
+No	0
+App does not list out the Bowler Info.
+App Only Shows Marlins & Sharks
+Performance levels:	Score:
+Yes	5
+The app filters to only show the players for the Marlins & Sharks teams.
+No	0
+The app shows all Bowlers.
+Code is Clean
+Performance levels:	Score:
+Yes	5
+The code is readable (good naming conventions, indentation, commenting, etc.)
+Partial Credit	2.5
+There are some errors in readability.
+No	0
+Code is difficult to read.
