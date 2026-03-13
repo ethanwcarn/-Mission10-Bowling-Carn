@@ -63,3 +63,4 @@ C:\Users\ethan\Downloads\Mission 10 Bowling\BowlingApi\obj\Debug\net10.0\refint\
 C:\Users\ethan\Downloads\Mission 10 Bowling\BowlingApi\obj\Debug\net10.0\BowlingApi.pdb
 C:\Users\ethan\Downloads\Mission 10 Bowling\BowlingApi\obj\Debug\net10.0\BowlingApi.genruntimeconfig.cache
 C:\Users\ethan\Downloads\Mission 10 Bowling\BowlingApi\obj\Debug\net10.0\ref\BowlingApi.dll
+C:\Users\ethan\Downloads\Mission 10 Bowling\BowlingApi\obj\Debug\net10.0\BowlingApi.sourcelink.json
