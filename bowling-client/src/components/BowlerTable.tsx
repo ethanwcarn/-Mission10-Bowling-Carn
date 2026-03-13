@@ -18,7 +18,7 @@ export interface Bowler {
  * URL of the ASP.NET API endpoint that exposes bowler data.
  * If the API port changes, this constant is the only place that must be updated.
  */
-const API_URL = 'http://localhost:5205/api/bowlers'
+const API_URL = '/api/bowlers'
 
 /**
  * Table component that fetches bowler data from the ASP.NET API and
